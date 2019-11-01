@@ -1,0 +1,13 @@
+---
+title: 'SharePoint MOSS 2007: Request for the permission of type ''System.Data.SqlClient.SqlClientPermission,
+  ...'' failed - Part II'
+date: '2008-06-11T16:26:00.000-07:00'
+tags:
+- MOSS
+- SharePoint
+modified_time: '2008-06-11T16:50:43.359-07:00'
+blogger_id: tag:blogger.com,1999:blog-19111454.post-3977825471997630499
+blogger_orig_url: http://www.bryansgeekspeak.com/2008/06/sharepoint-moss-2007-request-for.html
+---
+
+in my previous post <a href="http://bryansgeekspeak.blogspot.com/2008/05/sharepoint-moss-2007-request-for.html">SharePoint MOSS 2007: Request for the permission of type 'System.Data.SqlClient.SqlClientPermission, System.Data...' failed</a> I show a way to work around the security issues of using the SqlClient object in a web part (or server side control) by editing the wss_minimaltrust.config.  But when I started digging deeper into custom code, I needed to access more objects currently restricted by the wss_minimaltrust policy, like SMTPServer and ConfigurationManager.<br /><br />I suddenly realized I should just be using the medium policy rather than the minimal policy for all my web applications using custom Web Parts. It just so happens you can indeed change the policy used by the entire web application right in the web.config using the following element:<br /><br /><div class="code"><br />&lt;trust level="<strong>WSS_Medium</strong>" originUrl="" /&gt;<br /></div><br />...where the trust level is one already defined in the <span style="font-style:italic;">&lt;securityPolicy&gt;</span> section of your web.config file.  <br /><br />You'll find that a web application created by sharepoint defines two policies for you by default in the web.config file:<br /><br /><div class="code"><br />&lt;securityPolicy&gt;<br />  &lt;trustLevel name="WSS_Medium" policyFile="C:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\12\config\wss_mediumtrust.config" /&gt;<br />  &lt;trustLevel name="WSS_Minimal" policyFile="C:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\12\config\wss_minimaltrust.config" /&gt;<br />&lt;/securityPolicy&gt;<br /></div><br />I assume they did this specifically for custom development (thank god!).  In a standard sharepoint install without any custom development work, the minimal policy is perfect (and probably much more secure). If youre doing any custom webparts or server side controls though, do yourself a favor and switch to the medium policy right from the start.

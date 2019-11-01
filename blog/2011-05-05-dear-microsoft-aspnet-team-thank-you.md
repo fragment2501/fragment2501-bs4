@@ -1,0 +1,11 @@
+---
+title: 'Dear Microsoft ASP.NET Team: Thank you for Razor!'
+date: '2011-05-05T10:00:00.000-07:00'
+tags:
+- ASP.NET
+modified_time: '2011-05-05T10:00:51.412-07:00'
+blogger_id: tag:blogger.com,1999:blog-19111454.post-4701277518192191490
+blogger_orig_url: http://www.bryansgeekspeak.com/2011/05/dear-microsoft-aspnet-team-thank-you.html
+---
+
+Since day one of using traditional ASP.NET to work with web applications, I've hated it >_> The ASP page life cycle just feels like a huge pain to me. The methodology for page processing that they invented is so wacky compared to every other web development platform I've ever used. I cried and gnashed my teeth...and just lived with it for a while.<br /><br />Then, from out of nowhere, they released the MVC toolkit for ASP.NET - and I loved it. At least compared to the traditional ASP.NET page life cycle.  It still seemed a bit rough when I looked at MVC2 a while back, and I never really found a project to test it out on. I ended up working more on workflow projects in Lombardi Teamworks until recently, so my research into MVC went on the back burner for while.<br /><br />Now that I'm about to dive into a new ASP.NET project, I've been looking at MVC3 and the new Razor syntax - wow! Its like they actually realized that just about everything in traditional ASP.NET page development is garbage and they decided to build MVC3 and Razor to sit over top of the garbage framework and actually act like a real web development toolkit! Yay! (I know, I know, I'm being too harsh, but thats how I truly feel about it! xD )<br /><br />Whatever the reasons were for making the move, I thank you Microsoft ASP.NET development team. You've made me very happy by giving me a straight forward development option. Now its time to explore the guts of how it works, and figure out how to hook into the datamodel from razor :D<br /><br />For some awesome intro and tutorials for programming in Razor with ASP.NET 4:<br /><a href="http://www.asp.net/web-pages">http://www.asp.net/web-pages</a>

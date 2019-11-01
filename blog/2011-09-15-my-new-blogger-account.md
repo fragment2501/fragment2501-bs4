@@ -1,0 +1,10 @@
+---
+title: My New Blogger Account...
+date: '2011-09-15T13:08:00.000-07:00'
+tags: 
+modified_time: '2011-09-15T13:08:37.144-07:00'
+blogger_id: tag:blogger.com,1999:blog-19111454.post-8764620323958140915
+blogger_orig_url: http://www.bryansgeekspeak.com/2011/09/my-new-blogger-account.html
+---
+
+So ok, I created this blog using one of my old google accounts a long time ago. Later I registered a google apps account and bought a domain name through google apps for it - bryansgeekspeak.com. Google setup all the DNS for me through godaddy just fine ... but I could never get emails working properly. The MX records I tried to register with godaddy would save in their crappy domain management tool, but their DNS records would never reflect those changes. I eventually gave up and decided to transfer the domain to dotster, which hosts all of my other domains.<br /><br />What a royal pain.&nbsp; To transfer the domain, I had to jump through a bunch of hoops for google/godaddy to release the domain ... the service to make your contact info private was killing my domain transfer...documentation about that would have been nice google! *shakes a fist!*<br /><br />But now it's all done, and I am back to managing DNS on my own server using bind on my linux box.&nbsp; Finally, I have valid MX records for mail through bryansgeekspeak.com :-D<br /><br />So now I have moved ownership of this blog to my new google apps account "Bryan" for the domain "bryansgeekspeak.com" and the profile info on the right column here on the blog reflects that.<br /><br />With all that garbage out of the way, I'm ready to get back to posting new stuff I've been working on - Like tricks to updating custom SharePoint 2007 masterpage/page layouts so they work with SharePoint 2010's visual upgrade...and maybe something about Google's Fusion Tables too!
