@@ -1,22 +1,19 @@
 <template>
   <Layout>
-    <h1 class="my-4 mb-5">Blog</h1>
+    <h1>Blog</h1>
 
-    <div class="row"
+    <div class="row justify-content-md-center"
       v-for="item in $page.posts.edges"
       :key="item.node.id"
     >
 
-      <div class="col-2">
-        <g-image v-if="item.node.cover_image" :src="item.node.cover_image" alt="image" class="img-fluid img-thumbnail float-left"  />
-        <g-image v-if="!item.node.cover_image" src="~/assets/images/darkbluething.jpg" alt="image" class="img-fluid img-thumbnail float-left"  />
-      </div>
-      <div class="col-10">
-        <g-link :to="item.node.path">
-          <h5 >{{item.node.title}}</h5>
-        {{new Date(item.node.date).toLocaleDateString()}}
-          <p class="text-dark">{{item.node.description}}</p>
-        </g-link>
+      <div class="card w-50 mb-3" >
+        <g-image v-if="item.node.cover_image" :src="item.node.cover_image" alt="image" class="card-img-top"  />
+        <div class="card-body">
+          <h5 class="card-title">{{item.node.title}}</h5>
+          <p class="card-text">{{item.node.description}}</p>
+          <g-link :to="item.node.path" class="btn btn-primary">Continue Reading</g-link>
+        </div>
       </div>
 
     </div>
