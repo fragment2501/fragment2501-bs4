@@ -2,17 +2,19 @@
   <Layout>
     <h1>Blog</h1>
 
-    <div class="row justify-content-md-center"
+    <div class="row justify-content-center"
       v-for="item in $page.posts.edges"
       :key="item.node.id"
     >
 
-      <div class="card w-50 mb-3" >
-        <g-image v-if="item.node.cover_image" :src="item.node.cover_image" alt="image" class="card-img-top"  />
-        <div class="card-body">
-          <h5 class="card-title">{{item.node.title}}</h5>
-          <p class="card-text">{{item.node.description}}</p>
-          <g-link :to="item.node.path" class="btn btn-primary">Continue Reading</g-link>
+      <div class="col-md-8 mb-3">
+        <div class="card" >
+          <g-image v-if="item.node.cover_image" :src="item.node.cover_image" alt="image" class="card-img-top"  />
+          <div class="card-body">
+            <h5 class="card-title">{{item.node.title}}</h5>
+            <p class="card-text">{{item.node.description}}</p>
+            <g-link :to="item.node.path" class="btn btn-primary">Continue Reading</g-link>
+          </div>
         </div>
       </div>
 

@@ -30,3 +30,23 @@ $grid-breakpoints: (
   lg: 992px,
   xl: 1300px
 );
+
+// Dark theme overrides
+$body-bg: #0D2538;
+$body-color: #fff;
+$card-bg: #0f2d44;
+$link-color: #af9cef;
+
+
+// Code block overrides. 
+// We should be able to port all this to normal bootstrap variables like the dark theme overrides.
+body {
+  --bg-code: rgba(0,0,0,0.3);
+  --border-color:  rgba(255,255,255,.1);;
+  --radius: 5px;
+  --space: 3.5rem;
+  --bg-color: #0D2538;
+ 	--bg-content-color: #0f2d44;
+  --body-color: #ced8de;
+  --title-color: #fff;
+}
