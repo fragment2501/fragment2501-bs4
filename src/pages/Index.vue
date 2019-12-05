@@ -1,81 +1,252 @@
 <template>
-  <Layout>
-    <img class="greet-image" src="../../uploads/hello.svg" />
-
-    <h2 class="mb-4">Gridsome starter bootstrap</h2>
-    <p>
-      This is a starter project for Gridsome that comes with many features out of the box. It utilizes Bootstrap that is well known
-      for powerful styling and layout. Ready to be deployed, automagically imports data to CMS and sets up your /admin page for easy
-      access to edit your content. 
-    </p>
-
-    <p>
-      It is designed to use Netlify, Forestry and Github which all have very fair free tier to their services, so you wont need to pay
-      for monthly subscriptions and costly hosting fees.
-    </p>
-
-    <h3 class="mt-5 mb-4">Features</h3>
-    <p>This starter project includes some of the latest powerful technologies.</p>
-    <ul>
-      <li>
-        <b>Gridsome - </b> Vue.js & GraphQL powered framework genrating static files.
-      </li>
-      <li>
-        <b>Bootstrap & Bootstrap Vue - </b> Powerful styling and layout with styled Vue components.
-      </li>
-      <li>
-        <b>Sass - </b> Professional grade CSS extension with many features.
-      </li>
-      <li>
-        <b>Forestry.io - </b> CMS that uses the Github repo for storage.
-      </li>
-      <li>
-        <b>Markdown - </b> Easy and widely used format for writing content.
-      </li>
-      <li>
-        <b>Netlify forms - </b> Netlify forms ready to be used after deployment.
-      </li>
-      <li>
-        <b>Google Analytics - </b> Just add your tracking ID in the config.
-      </li>
-      <li>
-        <b>Sitemap generator - </b> Automatically generates a sitemap.xml file.
-      </li>
-    </ul>
-
-    <h3 class="mt-5 mb-4">Getting started</h3>
-    <p>The easiest way to get started quick is to use the Forestry button below, which will create a Github repository for you,
-      clone this starter repo and import all data to the CMS. After that is complete, you can just go to <a href="https://www.netlify.com/">Netlify</a>
-      and connect your newly created project that will set it up for automatic deployment when you commit to the Github repo.
-    </p>
-
-    <h3 class="mt-4 mb-4">Netlify config</h3>
-    <p>
-      Use the following build config for Netlify
-    </p>
-    
-    <p>
-      Build command: <code>gridsome build</code>
-    </p>
-    <p>
-      Publish directory: <code>dist</code>
-    </p>
-
-
-    <h4 class="mb-3 mt-5">Manually install just the project (without CMS).</h4>
-
-    <p>If you haven't already installed Gridsome CLI: <code>npm install --global @gridsome/cli</code></p>
-
-    <ol>
-      <li><code>gridsome create my-gridsome-site https://github.com/LokeCarlsson/gridsome-starter-bootstrap.git</code></li>
-
-      <li><code>cd my-gridsome-site</code> to open folder</li>
-
-      <li><code>yarn dev</code> to start local dev server at <code>http://localhost:8080</code></li>
-
-      <li>Happy hacking 🎉🙌</li>
-    </ol>
-
+  <Layout :colorOnScroll="400">
+    <div>
+      <div class="page-header page-header-small">
+        <parallax
+          class="page-header-image"
+          style="background-image: url('img/bg6.jpg')"
+        >
+        </parallax>
+        <div class="content-center">
+          <div class="container">
+            <h1 class="title">This is our great company.</h1>
+            <div class="text-center">
+              <a href="#pablo" class="btn btn-primary btn-icon btn-round">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+              <a href="#pablo" class="btn btn-primary btn-icon btn-round">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#pablo" class="btn btn-primary btn-icon btn-round">
+                <i class="fab fa-google-plus"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section section-about-us">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 ml-auto mr-auto text-center">
+              <h2 class="title">Who we are?</h2>
+              <h5 class="description">
+                According to the National Oceanic and Atmospheric Administration,
+                Ted, Scambos, NSIDClead scentist, puts the potentially record low
+                maximum sea ice extent tihs year down to low ice extent in the
+                Pacific and a late drop in ice extent in the Barents Sea.
+              </h5>
+            </div>
+          </div>
+          <div class="separator separator-primary"></div>
+          <div class="section-story-overview">
+            <div class="row">
+              <div class="col-md-6">
+                <div
+                  class="image-container image-left"
+                  style="background-image: url('img/login.jpg')"
+                >
+                  <!-- First image on the left side -->
+                  <p class="blockquote blockquote-primary">
+                    "Over the span of the satellite record, Arctic sea ice has
+                    been declining significantly, while sea ice in the
+                    Antarctichas increased very slightly"
+                    <br />
+                    <br />
+                    <small>-NOAA</small>
+                  </p>
+                </div>
+                <!-- Second image on the left side of the article -->
+                <div
+                  class="image-container"
+                  style="background-image: url('img/bg3.jpg')"
+                ></div>
+              </div>
+              <div class="col-md-5">
+                <!-- First image on the right side, above the article -->
+                <div
+                  class="image-container image-right"
+                  style="background-image: url('img/bg1.jpg')"
+                ></div>
+                <h3>
+                  So what does the new record for the lowest level of winter ice
+                  actually mean
+                </h3>
+                <p>
+                  The Arctic Ocean freezes every winter and much of the sea-ice
+                  then thaws every summer, and that process will continue whatever
+                  happens with climate change. Even if the Arctic continues to be
+                  one of the fastest-warming regions of the world, it will always
+                  be plunged into bitterly cold polar dark every winter. And
+                  year-by-year, for all kinds of natural reasons, there’s huge
+                  variety of the state of the ice.
+                </p>
+                <p>
+                  For a start, it does not automatically follow that a record
+                  amount of ice will melt this summer. More important for
+                  determining the size of the annual thaw is the state of the
+                  weather as the midnight sun approaches and temperatures rise.
+                  But over the more than 30 years of satellite records, scientists
+                  have observed a clear pattern of decline, decade-by-decade.
+                </p>
+                <p>
+                  The Arctic Ocean freezes every winter and much of the sea-ice
+                  then thaws every summer, and that process will continue whatever
+                  happens with climate change. Even if the Arctic continues to be
+                  one of the fastest-warming regions of the world, it will always
+                  be plunged into bitterly cold polar dark every winter. And
+                  year-by-year, for all kinds of natural reasons, there’s huge
+                  variety of the state of the ice.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section section-team text-center">
+        <div class="container">
+          <h2 class="title">Here is our team</h2>
+          <div class="team">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="team-player">
+                  <img
+                    src="img/avatar.jpg"
+                    alt="Thumbnail Image"
+                    class="rounded-circle img-fluid img-raised"
+                  />
+                  <h4 class="title">Romina Hadid</h4>
+                  <p class="category text-primary">Model</p>
+                  <p class="description">
+                    You can write here details about one of your team members. You
+                    can give more details about what they do. Feel free to add
+                    some <a href="#">links</a> for people to be able to follow
+                    them outside the site.
+                  </p>
+                  <a href="#pablo" class="btn btn-primary btn-icon btn-round"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a href="#pablo" class="btn btn-primary btn-icon btn-round"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a href="#pablo" class="btn btn-primary btn-icon btn-round"
+                    ><i class="fab fa-facebook-square"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="team-player">
+                  <img
+                    src="img/ryan.jpg"
+                    alt="Thumbnail Image"
+                    class="rounded-circle img-fluid img-raised"
+                  />
+                  <h4 class="title">Ryan Tompson</h4>
+                  <p class="category text-primary">Designer</p>
+                  <p class="description">
+                    You can write here details about one of your team members. You
+                    can give more details about what they do. Feel free to add
+                    some <a href="#">links</a> for people to be able to follow
+                    them outside the site.
+                  </p>
+                  <a href="#pablo" class="btn btn-primary btn-icon btn-round"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a href="#pablo" class="btn btn-primary btn-icon btn-round"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="team-player">
+                  <img
+                    src="img/eva.jpg"
+                    alt="Thumbnail Image"
+                    class="rounded-circle img-fluid img-raised"
+                  />
+                  <h4 class="title">Eva Jenner</h4>
+                  <p class="category text-primary">Fashion</p>
+                  <p class="description">
+                    You can write here details about one of your team members. You
+                    can give more details about what they do. Feel free to add
+                    some <a href="#">links</a> for people to be able to follow
+                    them outside the site.
+                  </p>
+                  <a href="#pablo" class="btn btn-primary btn-icon btn-round"
+                    ><i class="fab fa-google-plus"></i
+                  ></a>
+                  <a href="#pablo" class="btn btn-primary btn-icon btn-round"
+                    ><i class="fab fa-youtube"></i
+                  ></a>
+                  <a href="#pablo" class="btn btn-primary btn-icon btn-round"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section section-contact-us text-center">
+        <div class="container">
+          <h2 class="title">Want to work with us?</h2>
+          <p class="description">Your project is very important to us.</p>
+          <div class="row">
+            <div class="col-lg-6 text-center ml-auto mr-auto col-md-8">
+              <fg-input
+                class="input-lg"
+                placeholder="First Name..."
+                v-model="form.firstName"
+                addon-left-icon="now-ui-icons users_circle-08"
+              >
+              </fg-input>
+              <fg-input
+                class="input-lg"
+                placeholder="Email Here..."
+                v-model="form.email"
+                addon-left-icon="now-ui-icons ui-1_email-85"
+              >
+              </fg-input>
+              <div class="textarea-container">
+                <textarea
+                  class="form-control"
+                  name="name"
+                  rows="4"
+                  cols="80"
+                  v-model="form.message"
+                  placeholder="Type a message..."
+                ></textarea>
+              </div>
+              <div class="send-button">
+                <n-button type="primary" round block size="lg"
+                  >Send Message</n-button
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </Layout>
 </template>
+<script>
+import { Button, FormGroupInput  } from '@/components';
+export default {
+  name: 'landing',
+  bodyClass: 'landing-page',
+  components: {
+    [Button.name]: Button,
+    [FormGroupInput.name]: FormGroupInput,
+  },
+  data() {
+    return {
+      form: {
+        firstName: '',
+        email: '',
+        message: ''
+      }
+    };
+  }
+};
+</script>
+<style></style>
 

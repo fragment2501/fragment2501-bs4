@@ -1,7 +1,7 @@
 <template>
   <div class="layout">
     <div class="container">
-      <Header/>
+      <Header :transparent="transparent" :colorOnScroll="colorOnScroll"/>
       <slot/>
     </div>
     <Footer/>
@@ -17,6 +17,10 @@ export default {
     Footer,
     Header,
   },
+  props: {
+    transparent: Boolean,
+    colorOnScroll: Number
+  }
 }
 </script>
 
