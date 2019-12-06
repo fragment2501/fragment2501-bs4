@@ -1,9 +1,7 @@
 <template>
-  <div class="layout">
-    <div class="container">
-      <Header/>
+  <div class="layout sidebar-collapse">
+      <Header :transparent="transparent" :colorOnScroll="colorOnScroll"/>
       <slot/>
-    </div>
     <Footer/>
   </div>
 </template>
@@ -17,6 +15,10 @@ export default {
     Footer,
     Header,
   },
+  props: {
+    transparent: Boolean,
+    colorOnScroll: Number
+  }
 }
 </script>
 
