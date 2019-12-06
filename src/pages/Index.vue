@@ -4,7 +4,7 @@
       <div class="page-header page-header-small">
         <parallax
           class="page-header-image"
-          style="background-image: url('img/bg6.jpg')"
+          style="background-image: url('images/barbg.jpg')"
         >
         </parallax>
         <div class="content-center">
@@ -43,7 +43,7 @@
               <div class="col-md-6">
                 <div
                   class="image-container image-left"
-                  style="background-image: url('img/login.jpg')"
+                  style="background-image: url('images/sfbridge.jpg')"
                 >
                   <!-- First image on the left side -->
                   <p class="blockquote blockquote-primary">
@@ -58,14 +58,14 @@
                 <!-- Second image on the left side of the article -->
                 <div
                   class="image-container"
-                  style="background-image: url('img/bg3.jpg')"
+                  style="background-image: url('images/b3.jpg')"
                 ></div>
               </div>
               <div class="col-md-5">
                 <!-- First image on the right side, above the article -->
                 <div
                   class="image-container image-right"
-                  style="background-image: url('img/bg1.jpg')"
+                  style="background-image: url('images/mt.jpg')"
                 ></div>
                 <h3>
                   So what does the new record for the lowest level of winter ice
