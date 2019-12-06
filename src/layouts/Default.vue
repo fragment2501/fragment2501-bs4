@@ -1,9 +1,7 @@
 <template>
-  <div class="layout">
-    <div class="container">
+  <div class="layout sidebar-collapse">
       <Header :transparent="transparent" :colorOnScroll="colorOnScroll"/>
       <slot/>
-    </div>
     <Footer/>
   </div>
 </template>
