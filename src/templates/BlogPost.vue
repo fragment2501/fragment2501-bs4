@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Layout :colorOnScroll="400">
     <g-image v-if="$page.post.cover_image" class="blogImage mb-4" :src="$page.post.cover_image" />
     <div class="blogPost">
       <h1 v-html="$page.post.title" class="mb-4"/>
