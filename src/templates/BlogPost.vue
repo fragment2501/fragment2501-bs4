@@ -1,5 +1,6 @@
 <template>
   <Layout>
+    <div class="container mt-5 pt-5">
     <g-image v-if="$page.post.cover_image" class="blogImage mb-4" :src="$page.post.cover_image" />
     <div class="blogPost">
       <h1 v-html="$page.post.title" class="mb-4"/>
@@ -14,6 +15,7 @@
         </div>
       </div>
       <BlogContent class="mt-5" :content="$page.post.content"/>
+    </div>
     </div>
   </Layout>
 </template>

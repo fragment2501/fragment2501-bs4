@@ -1,6 +1,21 @@
 <template>
-  <Layout>
-    <h1>Blog</h1>
+  <Layout :colorOnScroll="400">
+
+  <div class="page-header page-header-small">
+    <parallax
+      class="page-header-image"
+      style="background-image: url('images/barbg.jpg')"
+    >
+    </parallax>
+
+      <div class="content-center">
+        <div class="container">
+          <h1 class="title">This is a blog listing! Yay!</h1>
+        </div>
+      </div>
+    </div>
+
+<br/>
 
     <div class="row justify-content-center"
       v-for="item in $page.posts.edges"
@@ -18,7 +33,7 @@
         </div>
       </div>
 
-    </div>
+</div>
   </Layout>
 </template>
 
