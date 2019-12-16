@@ -10,6 +10,11 @@
         <div class="content-center">
           <div class="container">
             <h1 class="title">This is a landing page!</h1>
+            <div class="text-center">
+              <a href="#fragment2501" class="btn btn-primary btn-icon btn-round"><i class="fab"><font-awesome :icon="['fab', 'slack']"/></i></a>
+              <a href="#fragment2501" class="btn btn-primary btn-icon btn-round"><i class="fab"><font-awesome :icon="['fab', 'twitter']"/></i></a>
+              <a href="#fragment2501" class="btn btn-primary btn-icon btn-round"><i class="fab"><font-awesome :icon="['fab', 'google-plus-square']"/></i></a>
+            </div>
           </div>
         </div>
       </div>
