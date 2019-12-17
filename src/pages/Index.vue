@@ -10,6 +10,11 @@
         <div class="content-center">
           <div class="container">
             <h1 class="title">This is a landing page!</h1>
+            <div class="text-center">
+              <a href="#fragment2501" class="btn btn-primary btn-icon btn-round"><i class="fab"><font-awesome :icon="['fab', 'slack']"/></i></a>
+              <a href="#fragment2501" class="btn btn-primary btn-icon btn-round"><i class="fab"><font-awesome :icon="['fab', 'twitter']"/></i></a>
+              <a href="#fragment2501" class="btn btn-primary btn-icon btn-round"><i class="fab"><font-awesome :icon="['fab', 'google-plus-square']"/></i></a>
+            </div>
           </div>
         </div>
       </div>
@@ -91,99 +96,15 @@
           </div>
         </div>
       </div>
-      <div class="section section-team text-center">
-        <div class="container">
-          <h2 class="title">Here is our team</h2>
-          <div class="team">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="team-player">
-                  <img
-                    src="img/avatar.jpg"
-                    alt="Thumbnail Image"
-                    class="rounded-circle img-fluid img-raised"
-                  />
-                  <h4 class="title">Romina Hadid</h4>
-                  <p class="category text-primary">Model</p>
-                  <p class="description">
-                    You can write here details about one of your team members. You
-                    can give more details about what they do. Feel free to add
-                    some <a href="#">links</a> for people to be able to follow
-                    them outside the site.
-                  </p>
-                  <a href="#pablo" class="btn btn-primary btn-icon btn-round"
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a href="#pablo" class="btn btn-primary btn-icon btn-round"
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                  <a href="#pablo" class="btn btn-primary btn-icon btn-round"
-                    ><i class="fab fa-facebook-square"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="team-player">
-                  <img
-                    src="img/ryan.jpg"
-                    alt="Thumbnail Image"
-                    class="rounded-circle img-fluid img-raised"
-                  />
-                  <h4 class="title">Ryan Tompson</h4>
-                  <p class="category text-primary">Designer</p>
-                  <p class="description">
-                    You can write here details about one of your team members. You
-                    can give more details about what they do. Feel free to add
-                    some <a href="#">links</a> for people to be able to follow
-                    them outside the site.
-                  </p>
-                  <a href="#pablo" class="btn btn-primary btn-icon btn-round"
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a href="#pablo" class="btn btn-primary btn-icon btn-round"
-                    ><i class="fab fa-linkedin"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="team-player">
-                  <img
-                    src="img/eva.jpg"
-                    alt="Thumbnail Image"
-                    class="rounded-circle img-fluid img-raised"
-                  />
-                  <h4 class="title">Eva Jenner</h4>
-                  <p class="category text-primary">Fashion</p>
-                  <p class="description">
-                    You can write here details about one of your team members. You
-                    can give more details about what they do. Feel free to add
-                    some <a href="#">links</a> for people to be able to follow
-                    them outside the site.
-                  </p>
-                  <a href="#pablo" class="btn btn-primary btn-icon btn-round"
-                    ><i class="fab fa-google-plus"></i
-                  ></a>
-                  <a href="#pablo" class="btn btn-primary btn-icon btn-round"
-                    ><i class="fab fa-youtube"></i
-                  ></a>
-                  <a href="#pablo" class="btn btn-primary btn-icon btn-round"
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="section section-contact-us text-center">
         <div class="container">
-          <h2 class="title">Want to work with us?</h2>
-          <p class="description">Your project is very important to us.</p>
+          <h2 class="title">Send me a message!</h2>
+          <p class="description">Bored out of your mind waiting for that Pokemon Go raid to start? Still angry about how bad Hollow Man was?  Message me about it using this silly non-instant message delivery system! Hooray!</p>
           <div class="row">
             <div class="col-lg-6 text-center ml-auto mr-auto col-md-8">
               <fg-input
                 class="input-lg"
-                placeholder="First Name..."
+                placeholder="Your Name..."
                 v-model="form.firstName"
                 addon-left-icon="now-ui-icons users_circle-08"
               >
