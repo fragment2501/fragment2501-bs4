@@ -29,6 +29,24 @@ module.exports = {
       options: {
         cacheTime: 600000
       }
+    },
+    {
+      use: 'gridsome-plugin-pwa',
+      options: {
+        title: 'Fragment2501',
+        startUrl: '/',
+        display: 'standalone',
+        statusBarStyle: 'default',
+        manifestPath: 'manifest.json',
+        serviceWorkerPath: 'service-worker.js',
+        cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg',
+        shortName: 'Fragment2501',
+        themeColor: '#666600',
+        backgroundColor: '#ffffff',
+        icon: './src/assets/images/icons/msapplication-icon-144x144.png', // must be provided
+        msTileImage: '',
+        msTileColor: '#666600'
+      }
     }
   ],
   css: {
