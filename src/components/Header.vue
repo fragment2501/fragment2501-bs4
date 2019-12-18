@@ -8,30 +8,23 @@
     menu-classes="ml-auto"
   >
     <template slot-scope="{ toggle, isToggled }">
-      <router-link v-popover:popover1 class="navbar-brand" to="/">
-        Home
+      <router-link class="navbar-brand" to="/">
+        <g-image src="~/assets/images/bio-photo.svg" width="21" />
       </router-link>
-      <el-popover
-        ref="popover1"
-        popper-class="popover"
-        placement="bottom"
-        width="200"
-        trigger="hover"
-      >
-        <div class="popover-body">
-          An amazing landing page template!
-        </div>
-      </el-popover>
     </template>
     <template slot="navbar-menu">
       <li class="nav-item">
-        <a
-          class="nav-link"
-          href="/blog"
-        >
+        <nav-link to="/" class="nav-link" >
+          <i class="now-ui-icons location_bookmark"></i>
+          <p>Home</p>
+        </nav-link>
+      </li>
+
+      <li class="nav-item">
+        <nav-link to="/blog" class="nav-link" >
           <i class="now-ui-icons education_paper"></i>
           <p>Blog</p>
-        </a>
+        </nav-link>
       </li>
     </template>
   </navbar>
