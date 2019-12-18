@@ -28,7 +28,6 @@
         <a
           class="nav-link"
           href="/blog"
-          target="_blank"
         >
           <i class="now-ui-icons education_paper"></i>
           <p>Blog</p>
