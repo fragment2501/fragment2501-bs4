@@ -2,7 +2,7 @@
   <component
     :is="componentType"
     :to="to"
-    class="dropdown-item"
+    class=""
     @click.native.stop="closeNav"
   >
     <slot></slot>
