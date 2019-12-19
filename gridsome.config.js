@@ -43,7 +43,7 @@ module.exports = {
         shortName: 'Fragment2501',
         themeColor: '#666600',
         backgroundColor: '#ffffff',
-        icon: './src/assets/images/icons/msapplication-icon-144x144.png', // must be provided
+        icon: './src/assets/images/icons/manifest-icon-192.png', // must be provided
         msTileImage: '',
         msTileColor: '#666600'
       }
