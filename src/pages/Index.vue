@@ -109,12 +109,12 @@
             data-netlify="true"
             data-netlify-honeypot="bot-field"
           >
-          <input type="hidden" name="name" value="contact" />
-          <p hidden>
-            <label>
-              Don’t fill this out: <input name="bot-field" />
-            </label>
-          </p>
+            <input type="hidden" name="name" value="contact" />
+            <p hidden>
+              <label>
+                Don’t fill this out: <input name="bot-field" />
+              </label>
+            </p>
      
             <div class="row">
               <div class="col-lg-6 text-center ml-auto mr-auto col-md-8">
@@ -148,15 +148,13 @@
                   ></textarea>
                 </div>
                 <div class="send-button">
-                  <n-button type="primary" nativeType="submit" round block size="lg"
-                    >Send Message</n-button
-                  >
+                  <n-button type="primary" nativeType="submit" round block size="lg">
+                    Send Message
+                  </n-button>
                 </div>
               </div>
             </div>
-
           </b-form>
-
         </div>
       </div>
     </div>
@@ -184,7 +182,7 @@ export default {
     encode(data) {
       return Object.keys(data)
         .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-        .join('&')
+        .join('&');
     },
     handleSubmit(e) {
       console.log('Got here');
@@ -196,8 +194,8 @@ export default {
           ...this.form,
         }),
       })
-      .then(() => this.$router.push('/success'))
-      .catch(error => alert(error))
+        .then(() => this.$router.push('/success'))
+        .catch(error => alert(error));
     }
   }
 
