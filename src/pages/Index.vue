@@ -109,17 +109,14 @@
             data-netlify="true"
             data-netlify-honeypot="bot-field"
           >
-
             <input type="hidden" name="name" value="contact" />
             <p hidden>
               <label>
                 Don’t fill this out: <input name="bot-field" />
               </label>
             </p>
-
             <div class="row">
               <div class="col-lg-6 text-center ml-auto mr-auto col-md-8">
-
                 <div class="textarea-container">
                   <textarea
                     class="form-control"
@@ -131,15 +128,8 @@
                     placeholder="Type a message..."
                   ></textarea>
                 </div>
-                <div class="send-button">
-                  <n-button type="primary" nativeType="submit" round block size="lg">
-                    Send Message
-                  </n-button>
-                </div>
               </div>
             </div>
-
-     
           </form>
         </div>
       </div>
