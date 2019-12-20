@@ -101,14 +101,7 @@
           <h2 class="title">Send me a message!</h2>
           <p class="description">Bored out of your mind waiting for that Pokemon Go raid to start? Still angry about how bad Hollow Man was?  Message me about it using this silly non-instant message delivery system! Hooray!</p>
 
-          <b-form 
-            name="contact"
-            method="post"
-            @submit.prevent="handleSubmit"
-            action="/success/"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-          >
+
             <input type="hidden" name="name" value="contact" />
             <p hidden>
               <label>
@@ -150,10 +143,7 @@
 
               </div>
             </div>
-
-
      
-          </b-form>
         </div>
       </div>
     </div>
