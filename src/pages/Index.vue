@@ -116,21 +116,44 @@
               </label>
             </p>
 
-
-
-
             <div class="row">
               <div class="col-lg-6 text-center ml-auto mr-auto col-md-8">
-                <fg-input
-                  class="input-lg"
-                  placeholder="Your Name..."
-                  v-model="form.name"
-                  addon-left-icon="now-ui-icons users_circle-08"
-                >
-                </fg-input>
+                
+                <div class="input-group">
+                  <input 
+                    class="form-control" 
+                    type="text" 
+                    name="name" 
+                    placeholder="Your name..."
+                    v-model="form.name" 
+                  />
+                </div>
+                <div class="input-group">
+                  <input 
+                    class="form-control" 
+                    type="text" 
+                    name="email" 
+                    placeholder="Email..."
+                    v-model="form.email" 
+                  />
+                </div>
+                <div class="textarea-container">
+                  <textarea
+                    class="form-control"
+                    name="name"
+                    rows="4"
+                    cols="80"
+                    v-model="form.message"
+                    placeholder="Type a message..."
+                  ></textarea>
+                </div>
+                <div class="send-button">
+                  <n-button type="primary" round block size="lg"
+                    >Send Message</n-button
+                  >
+                </div>
               </div>
             </div>
-
 
 
      
