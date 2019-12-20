@@ -147,11 +147,7 @@
                     placeholder="Type a message..."
                   ></textarea>
                 </div>
-                <div class="send-button">
-                  <n-button type="primary" round block size="lg"
-                    >Send Message</n-button
-                  >
-                </div>
+
               </div>
             </div>
 
