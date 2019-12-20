@@ -116,44 +116,6 @@
               </label>
             </p>
      
-            <div class="row">
-              <div class="col-lg-6 text-center ml-auto mr-auto col-md-8">
-                <fg-input
-                  class="input-lg"
-                  id="name"
-                  name="name"
-                  placeholder="Your Name..."
-                  v-model="form.name"
-                  addon-left-icon="now-ui-icons users_circle-08"
-                >
-                </fg-input>
-                <fg-input
-                  class="input-lg"
-                  id="email"
-                  name="email"
-                  placeholder="Email Here..."
-                  v-model="form.email"
-                  addon-left-icon="now-ui-icons ui-1_email-85"
-                >
-                </fg-input>
-                <div class="textarea-container">
-                  <textarea
-                    class="form-control"
-                    id="message"
-                    name="message"
-                    rows="4"
-                    cols="80"
-                    v-model="form.message"
-                    placeholder="Type a message..."
-                  ></textarea>
-                </div>
-                <div class="send-button">
-                  <n-button type="primary" nativeType="submit" round block size="lg">
-                    Send Message
-                  </n-button>
-                </div>
-              </div>
-            </div>
           </b-form>
         </div>
       </div>
