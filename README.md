@@ -1,7 +1,6 @@
 # Gridsome vue-now-ui Blog Starter Experiement
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/8fe47863-eb74-40df-ab56-9657968c15ec/deploy-status)]
-(https://app.netlify.com/sites/fragment2501/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8fe47863-eb74-40df-ab56-9657968c15ec/deploy-status)](https://app.netlify.com/sites/fragment2501/deploys)
 
 This is my new blog, but mostly its an R&D sample site for me to try out jamstack stuff.  Here's all the stuff I've plugged in so far:
 
