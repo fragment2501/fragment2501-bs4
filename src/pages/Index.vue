@@ -100,61 +100,39 @@
         <div class="container">
           <h2 class="title">Send me a message!</h2>
           <p class="description">Bored out of your mind waiting for that Pokemon Go raid to start? Still angry about how bad Hollow Man was?  Message me about it using this silly non-instant message delivery system! Hooray!</p>
-
-          <b-form 
-            name="contact"
-            method="post"
-            @submit.prevent="handleSubmit"
-            action="/success/"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-          >
-            <input type="hidden" name="name" value="contact" />
-            <p hidden>
-              <label>
-                Don’t fill this out: <input name="bot-field" />
-              </label>
-            </p>
-     
-            <div class="row">
-              <div class="col-lg-6 text-center ml-auto mr-auto col-md-8">
-                <fg-input
-                  class="input-lg"
-                  id="name"
+          <div class="row">
+            <div class="col-lg-6 text-center ml-auto mr-auto col-md-8">
+              <fg-input
+                class="input-lg"
+                placeholder="Your Name..."
+                v-model="form.firstName"
+                addon-left-icon="now-ui-icons users_circle-08"
+              >
+              </fg-input>
+              <fg-input
+                class="input-lg"
+                placeholder="Email Here..."
+                v-model="form.email"
+                addon-left-icon="now-ui-icons ui-1_email-85"
+              >
+              </fg-input>
+              <div class="textarea-container">
+                <textarea
+                  class="form-control"
                   name="name"
-                  placeholder="Your Name..."
-                  v-model="form.name"
-                  addon-left-icon="now-ui-icons users_circle-08"
+                  rows="4"
+                  cols="80"
+                  v-model="form.message"
+                  placeholder="Type a message..."
+                ></textarea>
+              </div>
+              <div class="send-button">
+                <n-button type="primary" round block size="lg"
+                  >Send Message</n-button
                 >
-                </fg-input>
-                <fg-input
-                  class="input-lg"
-                  id="email"
-                  name="email"
-                  placeholder="Email Here..."
-                  v-model="form.email"
-                  addon-left-icon="now-ui-icons ui-1_email-85"
-                >
-                </fg-input>
-                <div class="textarea-container">
-                  <textarea
-                    class="form-control"
-                    id="message"
-                    name="message"
-                    rows="4"
-                    cols="80"
-                    v-model="form.message"
-                    placeholder="Type a message..."
-                  ></textarea>
-                </div>
-                <div class="send-button">
-                  <n-button type="primary" nativeType="submit" round block size="lg">
-                    Send Message
-                  </n-button>
-                </div>
               </div>
             </div>
-          </b-form>
+          </div>
         </div>
       </div>
     </div>
@@ -172,33 +150,12 @@ export default {
   data() {
     return {
       form: {
-        name: '',
+        firstName: '',
         email: '',
         message: ''
       }
     };
-  },
-  methods: {
-    encode(data) {
-      return Object.keys(data)
-        .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-        .join('&');
-    },
-    handleSubmit(e) {
-      console.log('Got here');
-      fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: this.encode({
-          'form-name': e.target.getAttribute('name'),
-          ...this.form,
-        }),
-      })
-        .then(() => this.$router.push('/success'))
-        .catch(error => alert(error));
-    }
   }
-
 };
 </script>
 <style></style>
