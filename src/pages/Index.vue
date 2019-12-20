@@ -101,49 +101,19 @@
           <h2 class="title">Send me a message!</h2>
           <p class="description">Bored out of your mind waiting for that Pokemon Go raid to start? Still angry about how bad Hollow Man was?  Message me about it using this silly non-instant message delivery system! Hooray!</p>
 
-          <form 
-            name="contact"
-            method="post"
-            v-on:submit.prevent="handleSubmit"
-            action="/success/"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-          >
-            <input type="hidden" name="name" value="contact" />
-            <p hidden>
-              <label>
-                Don’t fill this out: <input name="bot-field" />
-              </label>
-            </p>
-            <div class="row">
-              <div class="col-lg-6 text-center ml-auto mr-auto col-md-8">
-                <div class="textarea-container">
-                  <textarea
-                    class="form-control"
-                    id="message"
-                    name="message"
-                    rows="4"
-                    cols="80"
-                    v-model="form.message"
-                    placeholder="Type a message..."
-                  ></textarea>
-                </div>
-              </div>
-            </div>
-          </form>
+
         </div>
       </div>
     </div>
   </Layout>
 </template>
 <script>
-import { Button, FormGroupInput  } from '@/components';
+import { Button  } from '@/components';
 export default {
   name: 'landing',
   bodyClass: 'landing-page',
   components: {
-    [Button.name]: Button,
-    [FormGroupInput.name]: FormGroupInput,
+    [Button.name]: Button
   },
   data() {
     return {
