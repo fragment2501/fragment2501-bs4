@@ -14,7 +14,7 @@ This is my new blog, but mostly its an R&D sample site for me to try out jamstac
     1. Stuck to the out of the box defaults for PWA caching strategy. 
     1. Used `pwa-asset-generator` to create PWA image assets. The gridsome pwa plugin only uses 1 of those image icons, but I plan to add the others to the manifest file later.
 1. Added fontawesome as described in the gridsome documentation - https://gridsome.org/docs/assets-svg/#fontawesome-svg-icons.
-1. Hosting the site on https://www.netlify.com/ since it "just works" with gridsome.
+1. Hosting the site on https://www.netlify.com/ since it just works with gridsome and the free plan is plenty for R&D sites.
 
 ## Getting Started
 
