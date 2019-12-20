@@ -123,8 +123,6 @@
               <div class="col-lg-6 text-center ml-auto mr-auto col-md-8">
                 <fg-input
                   class="input-lg"
-                  id="name"
-                  name="name"
                   placeholder="Your Name..."
                   v-model="form.name"
                   addon-left-icon="now-ui-icons users_circle-08"
