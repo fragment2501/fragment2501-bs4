@@ -1,0 +1,33 @@
+{
+  parser: "vue-eslint-parser",
+  parserOptions: {
+    ecmaVersion: 2018,
+    sourceType: "module",
+    ecmaFeatures: {
+      jsx: true
+    }
+  },
+  env: {
+    "browser": true,
+    "es6": true,
+  },
+  extends: [
+    "eslint:recommended",
+    "plugin:vue/recommended"
+  ],
+  plugins: ["gridsome"],
+  rules: {
+    "gridsome/format-query-block": "warn",
+    "gridsome/require-g-image-src": "error",
+    "gridsome/require-g-link-to": "warn",
+    "eqeqeq": "off",
+    "curly": "error",
+    "quotes": ["error", "single"],
+    "indent": ["error", 2],
+    "semi": "error",
+    "vue/html-indent": ["error", 2],
+    "vue/script-indent": ["error", 2],
+    "vue/html-quotes": ["error", "double"]
+  }
+}
+

@@ -18,6 +18,10 @@ Here's all the stuff I've smashed in so far.
     1. Added as described in the gridsome documentation so we only locally load icons that we need - https://gridsome.org/docs/assets-svg/#fontawesome-svg-icons.
     1. This is in addition to the nucleo icons included in the creative tim template.  (I'm thinking down the road I'll remove the nucleo icons in favor of the fontawesome ones)
 1. [Netlify](https://www.netlify.com) for hosting.  And dude, their build/preview/deploy workflow is super sexy <3
+1. PR/CI checks
+    1. ESLint Checks via [GitHub Actions](https://github.com/features/actions)
+        - [eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue)
+        - [eslint-plugin-gridsome](https://github.com/gridsome/eslint-plugin-gridsome)
 
 ## Getting Started
 
