@@ -16,8 +16,6 @@
     "plugin:vue/recommended"
   ],
   plugins: ["gridsome"],
-  globals: {
-  },
   rules: {
     "gridsome/format-query-block": "warn",
     "gridsome/require-g-image-src": "error",
