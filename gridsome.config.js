@@ -1,3 +1,5 @@
+/* global module */
+
 module.exports = {
   siteName: 'Fragment2501 BS4',
   siteUrl: 'https://mystifying-edison-5d2100.netlify.com',
@@ -59,4 +61,4 @@ module.exports = {
     host: '0.0.0.0',
     port: 8080
   }
-}
+};
