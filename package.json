@@ -16,7 +16,7 @@
     "bootstrap": "^4.3.1",
     "bootstrap-vue": "^2.0.4",
     "element-ui": "^2.5.4",
-    "gridsome": "^0.7.9",
+    "gridsome": "^0.7.12",
     "gridsome-plugin-pwa": "0.0.10",
     "node-sass": "^4.13.0",
     "nouislider": "^11.1.0",
