@@ -8,39 +8,26 @@
       <nav>
         <ul>
           <li>
-            <a href="https://www.creative-tim.com">
-              Creative Tim
-            </a>
+            <g-link to="/">
+              Home
+            </g-link>
           </li>
           <li>
-            <a href="https:///presentation.creative-tim.com">
-              About Us
-            </a>
-          </li>
-          <li>
-            <a href="https:///blog.creative-tim.com">
+            <g-link to="/blog">
               Blog
-            </a>
-          </li>
-          <li>
-            <a href="https://www.creative-tim.com/license">
-              License
-            </a>
+            </g-link>
           </li>
         </ul>
       </nav>
       <div class="copyright">
-        &copy; {{ year }}, Designed by
-        <a href="https:///www.invisionapp.com" target="_blank" rel="noopener"
-          >Invision</a
-        >. Coded by
-        <a href="https://binarcode.com" target="_blank" rel="noopener"
-          >BinarCode</a
-        >
-        and
-        <a href="https://www.creative-tim.com" target="_blank" rel="noopener"
-          >Creative Tim</a
-        >.
+        &copy; {{ year }}, Coded by 
+        <g-link to="https://github.com/fragment2501" target="_blank" rel="noopener">
+          Bryan
+        </g-link>. 
+        Base theme created by 
+        <g-link to="https://www.creative-tim.com" target="_blank" rel="noopener">
+          Creative Tim
+        </g-link>.
       </div>
     </div>
   </footer>
