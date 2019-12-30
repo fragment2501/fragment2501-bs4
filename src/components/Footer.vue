@@ -17,6 +17,11 @@
               Blog
             </g-link>
           </li>
+          <li>
+            <g-link to="/contact">
+              Contact
+            </g-link>
+          </li>
         </ul>
       </nav>
       <div class="copyright">

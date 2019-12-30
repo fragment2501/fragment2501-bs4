@@ -14,16 +14,15 @@
     </template>
     <template slot="navbar-menu">
       <li class="nav-item">
-        <nav-link to="/" class="nav-link" >
-          <i class="now-ui-icons location_bookmark"></i>
-          <p>Home</p>
-        </nav-link>
-      </li>
-
-      <li class="nav-item">
         <nav-link to="/blog" class="nav-link" >
           <i class="now-ui-icons education_paper"></i>
           <p>Blog</p>
+        </nav-link>
+      </li>
+      <li class="nav-item">
+        <nav-link to="/contact" class="nav-link" >
+          <i class="now-ui-icons ui-1_send"></i>
+          <p>Contact</p>
         </nav-link>
       </li>
     </template>

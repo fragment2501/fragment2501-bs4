@@ -95,45 +95,6 @@
           </div>
         </div>
       </div>
-      <div class="section section-contact-us text-center">
-        <div class="container">
-          <h2 class="title">Send me a message!</h2>
-          <p class="description">Bored out of your mind waiting for that Pokemon Go raid to start? Still angry about how bad Hollow Man was?  Message me about it using this silly non-instant message delivery system! Hooray!</p>
-          <div class="row">
-            <div class="col-lg-6 text-center ml-auto mr-auto col-md-8">
-              <fg-input
-                class="input-lg"
-                placeholder="Your Name..."
-                v-model="form.firstName"
-                addon-left-icon="now-ui-icons users_circle-08"
-              >
-              </fg-input>
-              <fg-input
-                class="input-lg"
-                placeholder="Email Here..."
-                v-model="form.email"
-                addon-left-icon="now-ui-icons ui-1_email-85"
-              >
-              </fg-input>
-              <div class="textarea-container">
-                <textarea
-                  class="form-control"
-                  name="name"
-                  rows="4"
-                  cols="80"
-                  v-model="form.message"
-                  placeholder="Type a message..."
-                ></textarea>
-              </div>
-              <div class="send-button">
-                <n-button type="primary" round block size="lg"
-                  >Send Message</n-button
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </Layout>
 </template>
