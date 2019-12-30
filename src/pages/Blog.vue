@@ -22,7 +22,7 @@
       :key="item.node.id"
     >
 
-      <div class="col-md-8 mb-3">
+      <div class="col-md-8 col-lg-6 mb-3">
         <div class="card" >
           <g-image v-if="item.node.cover_image" :src="item.node.cover_image" alt="image" class="card-img-top"  />
           <div class="card-body">
