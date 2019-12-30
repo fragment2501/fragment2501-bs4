@@ -1,21 +1,25 @@
 <template>
   <Layout>
     <div class="container mt-5 pt-5">
-    <g-image v-if="$page.post.cover_image" class="blogImage mb-4" :src="$page.post.cover_image" />
-    <div class="blogPost">
-      <h1 v-html="$page.post.title" class="mb-4"/>
-      <div class="meta">
-        <div class="box date">
-          <span class="label">Date</span>
-          <div v-text="new Date($page.post.date).toLocaleDateString()"/>
-        </div>
-        <div class="box time">
-          <span class="label">Time</span>
-          <span>{{ $page.post.timeToRead }} min read</span>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <g-image v-if="$page.post.cover_image" class="blogImage mb-4" :src="$page.post.cover_image" />
+          <div class="blogPost">
+            <h1 v-html="$page.post.title" class="mb-4"/>
+            <div class="meta">
+              <div class="box date">
+                <span class="label">Date</span>
+                <div v-text="new Date($page.post.date).toLocaleDateString()"/>
+              </div>
+              <div class="box time">
+                <span class="label">Time</span>
+                <span>{{ $page.post.timeToRead }} min read</span>
+              </div>
+            </div>
+            <BlogContent class="mt-5" :content="$page.post.content"/>
+          </div>
         </div>
       </div>
-      <BlogContent class="mt-5" :content="$page.post.content"/>
-    </div>
     </div>
   </Layout>
 </template>
