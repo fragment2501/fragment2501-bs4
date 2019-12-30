@@ -21,13 +21,13 @@
       </nav>
       <div class="copyright">
         &copy; {{ year }}, Coded by 
-        <g-link to="https://github.com/fragment2501" target="_blank" rel="noopener">
+        <a href="https://github.com/fragment2501" target="_blank" rel="noopener">
           Bryan
-        </g-link>. 
+        </a>. 
         Base theme created by 
-        <g-link to="https://www.creative-tim.com" target="_blank" rel="noopener">
+        <a href="https://www.creative-tim.com" target="_blank" rel="noopener">
           Creative Tim
-        </g-link>.
+        </a>.
       </div>
     </div>
   </footer>
