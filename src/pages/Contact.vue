@@ -4,7 +4,7 @@
   <div class="page-header page-header-small">
     <parallax
       class="page-header-image"
-      style="background-image: url('/images/barbg.jpg')"
+      style="background-image: url('/images/bg3.svg')"
     >
     </parallax>
 
