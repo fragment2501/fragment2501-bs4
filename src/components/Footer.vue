@@ -29,7 +29,7 @@
         <a href="https://github.com/fragment2501" target="_blank" rel="noopener">
           Bryan
         </a>. 
-        Base theme created by 
+        Base theme by 
         <a href="https://www.creative-tim.com" target="_blank" rel="noopener">
           Creative Tim
         </a>.
