@@ -2,7 +2,7 @@
 
 module.exports = {
   siteName: 'Fragment2501 BS4',
-  siteUrl: 'https://mystifying-edison-5d2100.netlify.com',
+  siteUrl: 'https://fragment2501.netlify.com',
   siteDescription: 'A blog experiment with gridsome BS4 starter template.',
   plugins: [
     {
