@@ -1,4 +1,4 @@
-# Gridsome vue-now-ui Blog Starter Experiement
+# Gridsome vue-now-ui Blog Starter Experiment
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8fe47863-eb74-40df-ab56-9657968c15ec/deploy-status)](https://app.netlify.com/sites/fragment2501/deploys)
 
