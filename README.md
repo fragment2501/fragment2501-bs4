@@ -22,6 +22,7 @@ Here's all the stuff I've smashed in so far.
     1. ESLint Checks via [GitHub Actions](https://github.com/features/actions)
         - [eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue)
         - [eslint-plugin-gridsome](https://github.com/gridsome/eslint-plugin-gridsome)
+    1. [Cypress](https://www.cypress.io/) browser tests.
 
 ## Getting Started
 
