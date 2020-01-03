@@ -18,5 +18,5 @@ npx gridsome develop & npx wait-on $BASEURL
 echo "Done!"
 
 echo "Run cypress checks..."
-npx cypress run --record --key 102ab8e2-a8b3-42ba-94f9-fe0221af31cc
+npx cypress run --record --key $CYPRESS_RECORD_KEY
 echo "Done!"
