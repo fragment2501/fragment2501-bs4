@@ -12,6 +12,13 @@
 // the project's config changing)
 
 module.exports = (on, config) => {
+  const Axios = require("axios");
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
+  on('task',{ 'percyHealthCheck'() {
+    return Axios.get("http://localhost:5338/percy/healthcheck")
+      .then(() => true)
+      .catch(() => false);
+    }
+  });
 }
