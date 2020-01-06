@@ -8,17 +8,17 @@
       <nav>
         <ul>
           <li>
-            <g-link to="/">
+            <g-link to="/" data-cy="footer-link-home">
               Home
             </g-link>
           </li>
           <li>
-            <g-link to="/blog">
+            <g-link to="/blog" data-cy="footer-link-blog">
               Blog
             </g-link>
           </li>
           <li>
-            <g-link to="/contact">
+            <g-link to="/contact" data-cy="footer-link-contact">
               Contact
             </g-link>
           </li>

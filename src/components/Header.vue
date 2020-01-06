@@ -8,19 +8,19 @@
     menu-classes="ml-auto"
   >
     <template slot-scope="{ toggle, isToggled }">
-      <router-link class="navbar-brand" to="/">
+      <router-link class="navbar-brand" to="/" data-cy="nav-brand-home">
         <g-image src="~/assets/images/bio-photo.svg" width="21" />
       </router-link>
     </template>
     <template slot="navbar-menu">
       <li class="nav-item">
-        <nav-link to="/blog" class="nav-link" >
+        <nav-link to="/blog" class="nav-link" data-cy="nav-link-blog">
           <i class="now-ui-icons education_paper"></i>
           <p>Blog</p>
         </nav-link>
       </li>
       <li class="nav-item">
-        <nav-link to="/contact" class="nav-link" >
+        <nav-link to="/contact" class="nav-link" data-cy="nav-link-contact">
           <i class="now-ui-icons ui-1_send"></i>
           <p>Contact</p>
         </nav-link>
