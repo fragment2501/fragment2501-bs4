@@ -2,6 +2,8 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8fe47863-eb74-40df-ab56-9657968c15ec/deploy-status)](https://app.netlify.com/sites/fragment2501/deploys)
 
+[![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/Fragment2501/fragment2501-bs4)
+
 This is my new blog, which is really just a jamstack playground for me.
 
 ## Features
@@ -23,6 +25,7 @@ Here's all the stuff I've smashed in so far.
         - [eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue)
         - [eslint-plugin-gridsome](https://github.com/gridsome/eslint-plugin-gridsome)
     1. [Cypress](https://www.cypress.io/) browser tests.
+    1. Percy.io for scheenshot diff tests.
 
 ## Getting Started
 
