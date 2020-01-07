@@ -25,6 +25,7 @@ Here's all the stuff I've smashed in so far.
         - [eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue)
         - [eslint-plugin-gridsome](https://github.com/gridsome/eslint-plugin-gridsome)
     1. [Cypress](https://www.cypress.io/) browser tests.
+    1. Percy.io for scheenshot diff tests.
 
 ## Getting Started
 
