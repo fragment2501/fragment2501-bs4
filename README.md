@@ -2,6 +2,8 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8fe47863-eb74-40df-ab56-9657968c15ec/deploy-status)](https://app.netlify.com/sites/fragment2501/deploys)
 
+[![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/Fragment2501/fragment2501-bs4
+
 This is my new blog, which is really just a jamstack playground for me.
 
 ## Features
