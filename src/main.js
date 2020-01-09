@@ -19,10 +19,10 @@ locale.use(lang);
 // Font Awesome Icons
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { config, library } from '@fortawesome/fontawesome-svg-core';
-import { faGithub, faTwitter, faGooglePlusSquare, faSlack } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faTwitter, faGooglePlusSquare, faDiscord } from '@fortawesome/free-brands-svg-icons';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 config.autoAddCss = false;
-library.add(faGithub, faTwitter, faGooglePlusSquare, faSlack);
+library.add(faGithub, faTwitter, faGooglePlusSquare, faDiscord);
 
 export default function (Vue, { router, head, isClient }) {
   // Default bootstrap stuff.
