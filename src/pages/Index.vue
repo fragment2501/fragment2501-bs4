@@ -11,8 +11,9 @@
           <div class="container">
             <h1 class="title">This is a landing page!</h1>
             <div class="text-center">
-              <a href="https://twitter.com/Fragment2501" class="btn btn-primary btn-icon btn-round" target="_blank" rel="noopener"><i class="fab"><font-awesome :icon="['fab', 'twitter']"/></i></a>
-              <a href="https://github.com/fragment2501" class="btn btn-primary btn-icon btn-round" target="_blank" rel="noopener"><i class="fab"><font-awesome :icon="['fab', 'github']"/></i></a>
+              <a href="https://github.com/fragment2501/fragment2501-bs4" title="Checkout the website repository!" class="btn btn-primary btn-icon btn-round" target="_blank" rel="noopener"><i class="fab"><font-awesome :icon="['fab', 'github']"/></i></a>
+              <a href="https://discord.gg/mSseSDD" title="Chat with me on discord!" class="btn btn-primary btn-icon btn-round" target="_blank" rel="noopener"><i class="fab"><font-awesome :icon="['fab', 'discord']"/></i></a>
+              <a href="https://twitter.com/Fragment2501" title="Poke me on twitter!" class="btn btn-primary btn-icon btn-round" target="_blank" rel="noopener"><i class="fab"><font-awesome :icon="['fab', 'twitter']"/></i></a>
             </div>
           </div>
         </div>
