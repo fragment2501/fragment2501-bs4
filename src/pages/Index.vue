@@ -9,7 +9,7 @@
         </parallax>
         <div class="content-center">
           <div class="container">
-            <h1 class="title">This is a landing page!</h1>
+            <h1 class="title">Bryan's Blog!</h1>
             <div class="text-center">
               <a href="https://github.com/fragment2501/fragment2501-bs4" title="Checkout the website repository!" class="btn btn-primary btn-icon btn-round" target="_blank" rel="noopener"><i class="fab"><font-awesome :icon="['fab', 'github']"/></i></a>
               <a href="https://discord.gg/mSseSDD" title="Chat with me on discord!" class="btn btn-primary btn-icon btn-round" target="_blank" rel="noopener"><i class="fab"><font-awesome :icon="['fab', 'discord']"/></i></a>
@@ -22,12 +22,10 @@
         <div class="container">
           <div class="row">
             <div class="col-md-8 ml-auto mr-auto text-center">
-              <h2 class="title">Who we are?</h2>
+              <h2 class="title">My little blog R&D site</h2>
               <h5 class="description">
-                According to the National Oceanic and Atmospheric Administration,
-                Ted, Scambos, NSIDClead scentist, puts the potentially record low
-                maximum sea ice extent tihs year down to low ice extent in the
-                Pacific and a late drop in ice extent in the Barents Sea.
+                Every now and then I come back to my blog, dust off the cobwebs and completely rebuild it from the ground up.
+                The goal is to just to take a step back from my usual toolset at work and try something new. This time I used Gridsome.
               </h5>
             </div>
           </div>
@@ -41,12 +39,7 @@
                 >
                   <!-- First image on the left side -->
                   <p class="blockquote blockquote-primary">
-                    "Over the span of the satellite record, Arctic sea ice has
-                    been declining significantly, while sea ice in the
-                    Antarctichas increased very slightly"
-                    <br />
-                    <br />
-                    <small>-NOAA</small>
+JAMStack: Fast and secure sites and apps delivered by pre-rendering files and serving them directly from a CDN, removing the requirement to manage or run web servers.
                   </p>
                 </div>
                 <!-- Second image on the left side of the article -->
@@ -62,34 +55,19 @@
                   style="background-image: url('images/mt.jpg')"
                 ></div>
                 <h3>
-                  So what does the new record for the lowest level of winter ice
-                  actually mean
+Built using Gridsome, a JAMStack framework. 
                 </h3>
                 <p>
-                  The Arctic Ocean freezes every winter and much of the sea-ice
-                  then thaws every summer, and that process will continue whatever
-                  happens with climate change. Even if the Arctic continues to be
-                  one of the fastest-warming regions of the world, it will always
-                  be plunged into bitterly cold polar dark every winter. And
-                  year-by-year, for all kinds of natural reasons, there’s huge
-                  variety of the state of the ice.
+I was looking for something I could use like a CMS, but with no back end (I do enough of that at work!). That way I can focus on building front end apps.
+Thats where a JAMStack approach seemed like the right way to go.
                 </p>
                 <p>
-                  For a start, it does not automatically follow that a record
-                  amount of ice will melt this summer. More important for
-                  determining the size of the annual thaw is the state of the
-                  weather as the midnight sun approaches and temperatures rise.
-                  But over the more than 30 years of satellite records, scientists
-                  have observed a clear pattern of decline, decade-by-decade.
+A friend pointed me to Gridsome and that ended up fitting me perfectly. The local development experience is easy to setup and use. I'm using github and netlify's build hooks for PR review sites and publishing on master branch pushes.
                 </p>
                 <p>
-                  The Arctic Ocean freezes every winter and much of the sea-ice
-                  then thaws every summer, and that process will continue whatever
-                  happens with climate change. Even if the Arctic continues to be
-                  one of the fastest-warming regions of the world, it will always
-                  be plunged into bitterly cold polar dark every winter. And
-                  year-by-year, for all kinds of natural reasons, there’s huge
-                  variety of the state of the ice.
+With Gridsome I went with content pages as markdown files that are manged along with code in git.
+The developer workflow with PR approval suddnely becomes the same for workflow for content authors.
+For a simple CMS, we remove the need for any heavy infrastructure to support content editing - all you need is git, a text editor and nodejs.
                 </p>
               </div>
             </div>
