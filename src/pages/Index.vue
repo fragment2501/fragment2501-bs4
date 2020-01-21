@@ -25,7 +25,7 @@
               <h2 class="title">My little blog R&D site</h2>
               <h5 class="description">
                 Every now and then I come back to my blog, dust off the cobwebs and completely rebuild it from the ground up.
-                The goal is to just to take a step back from my usual toolset at work and try something new. This time I used Gridsome.
+                The goal is to take a step back from my usual toolset at work and try something new. This time I tried Gridsome.
               </h5>
             </div>
           </div>
@@ -58,15 +58,15 @@ JAMStack: Fast and secure sites and apps delivered by pre-rendering files and se
 Built using Gridsome, a JAMStack framework. 
                 </h3>
                 <p>
-I was looking for something I could use like a CMS, but with no back end (I do enough of that at work!). That way I can focus on building front end apps.
+I'm looking for something I could use like a CMS, but with no back end (I do enough of that at work!). That way I can focus on building apps.
 Thats where a JAMStack approach seemed like the right way to go.
                 </p>
                 <p>
 A friend pointed me to Gridsome and that ended up fitting me perfectly. The local development experience is easy to setup and use. I'm using github and netlify's build hooks for PR review sites and publishing on master branch pushes.
                 </p>
                 <p>
-With Gridsome I went with content pages as markdown files that are manged along with code in git.
-The developer workflow with PR approval suddnely becomes the same for workflow for content authors.
+With Gridsome I went with content pages as markdown files managed along side with code in git.
+The developer workflow with PR approval suddenly becomes the same for workflow for content authors.
 For a simple CMS, we remove the need for any heavy infrastructure to support content editing - all you need is git, a text editor and nodejs.
                 </p>
               </div>
