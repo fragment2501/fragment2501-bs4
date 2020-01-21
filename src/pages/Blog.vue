@@ -11,7 +11,7 @@
 
         <div class="content-center">
           <div class="container">
-            <h1 class="title">This is a blog listing! Yay!</h1>
+            <h1 class="title">My Blog!</h1>
           </div>
         </div>
       </div>
