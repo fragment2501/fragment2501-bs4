@@ -67,7 +67,7 @@ A friend pointed me to Gridsome and that ended up fitting me perfectly. The loca
                 <p>
 With Gridsome I went with content pages as markdown files managed along side with code in git.
 The developer workflow with PR approval suddenly becomes the same workflow for content authors.
-On top of that, content editors get the benefit of PR approval checks, like <a href="//percy.io">Percy</a>, to help review changes before publishing.
+On top of that, content editors get the benefit of PR approval checks, like <a href="//percy.io" title="Percy!" target="_blank">Percy</a>, to help review changes before publishing.
 For a simple CMS, we remove the need for any heavy infrastructure to support content editing - all you need is git, a text editor and nodejs.
                 </p>
               </div>
