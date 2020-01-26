@@ -10,13 +10,18 @@ then
   echo "ESLINT FAIL. DONT RUN OTHER TESTS.";
   exit 1;
 fi
-echo "Done!"
+echo "Done with eslint!"
 
-echo "Start gridsome develop so we can run cypress checks..."
-echo "--- $BASEURL ---"
-npx gridsome develop & npx wait-on $BASEURL
-echo "Done!"
+echo "Start girdsome development server."
+npx gridsome develop > /dev/null 2>&1 &
+echo "Sleep 30 seconds to give gridsome time to warm up..."
+sleep 30
 
 echo "Run cypress checks..."
-npx cypress run --record --key $CYPRESS_RECORD_KEY
-echo "Done!"
+npx percy exec -- npx cypress run --record --key $CYPRESS_RECORD_KEY
+if [ $? != 0 ]
+then
+  echo "CYPRESS FAIL. DONT RUN OTHER TESTS.";
+  exit 1;
+fi
+echo "Done with cypress!"
