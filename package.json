@@ -6,7 +6,7 @@
     "dev": "gridsome develop",
     "explore": "gridsome explore",
     "test": "./runalltests.sh",
-    "pr-build-test": "percy exec -- ./runallprtests.sh"
+    "pr-build-test": "./runallprtests.sh"
   },
   "dependencies": {
     "@gridsome/plugin-google-analytics": "^0.1.0",

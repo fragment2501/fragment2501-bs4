@@ -18,7 +18,7 @@ echo "Sleep 30 seconds to give gridsome time to warm up..."
 sleep 30
 
 echo "Run cypress checks..."
-npx cypress run --record --key $CYPRESS_RECORD_KEY
+npx percy exec -- npx cypress run --record --key $CYPRESS_RECORD_KEY
 if [ $? != 0 ]
 then
   echo "CYPRESS FAIL. DONT RUN OTHER TESTS.";
