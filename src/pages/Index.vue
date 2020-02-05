@@ -76,6 +76,74 @@ For a simple CMS, we remove the need for any heavy infrastructure to support con
         </div>
       </div>
     </div>
+
+    <div class="section section-team text-center">
+      <div class="container">
+        <h2 class="title">Some Cool CMS Backend Options</h2>
+        <div class="team">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="team-player">
+                <g-image
+                  src="~/assets/images/netlify-cms.png"
+                  height="400"
+                  width="400"
+                  fit="contain"
+                  background="white"
+                  alt="Thumbnail Image"
+                  class="rounded-circle img-fluid img-raised"
+                />
+                <h4 class="title">
+                  <a href="//www.netlifycms.org" target="_blank" rel="noopener">Netlify CMS</a>
+                </h4>
+                <p class="description">
+                  Netlify CMS is based on client-side JavaScript, reusable APIs and prebuilt Markup. Compared to server-side CMS like WordPress, this means better performance, higher security, lower cost of scaling, and a better developer experience.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="team-player">
+                <g-image
+                  src="~/assets/images/forestryio.png"
+                  height="400"
+                  width="400"
+                  fit="contain"
+                  background="white"
+                  alt="Thumbnail Image"
+                  class="rounded-circle img-fluid img-raised"
+                />
+                <h4 class="title">
+                  <a href="//forestry.io" target="_blank" rel="noopener">Forestry</a>
+                </h4>
+                <p class="description">
+                  Forestry.io is a Git-backed CMS (content management system) for websites and web products built using static site generators. Forestry bridges the gap between developers and their teams, by making development fun and easy, while providing powerful content management for their teams.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="team-player">
+                <g-image
+                  src="~/assets/images/storyblok.png"
+                  height="400"
+                  width="400"
+                  fit="contain"
+                  background="white"
+                  alt="Thumbnail Image"
+                  class="rounded-circle img-fluid img-raised"
+                />
+                <h4 class="title">
+                  <a href="//www.storyblok.com" target="_blank" rel="noopener">Storyblok</a>
+                </h4>
+                <p class="description">
+                  Storyblok is a Headless Content Management System that provides developers with all the flexibility they need to build reliable and fast websites whilst giving content creators with no coding skills the ability to edit content independently of the developer. 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </Layout>
 </template>
 <script>
