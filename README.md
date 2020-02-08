@@ -6,6 +6,13 @@
 
 This is my new blog, which is really just a jamstack playground for me.
 
+## Getting Started
+
+1. Install the Gridsome CLI - https://gridsome.org/docs/#1-install-gridsome-cli-tool.
+2. Clone this project.
+3. Run `npm install`.
+4. Run `gridsome develop`
+
 ## Features
 Here's all the stuff I've smashed in so far.
 
@@ -30,10 +37,3 @@ Here's all the stuff I've smashed in so far.
     1. Use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) format on PR squashes moving forward. For commit types refer to [Angular commit message guidelines](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines).
     1. Releases will be their own PRs so we can do multiple commits to prep for a release.
         - Use [Standard Version](https://github.com/conventional-changelog/standard-version) for automation of semver versioning and changelog generation in release PR commits.
-
-## Getting Started
-
-1. Install the Gridsome CLI - https://gridsome.org/docs/#1-install-gridsome-cli-tool.
-2. Clone this project.
-3. Run `npm install`.
-4. Run `gridsome develop`
