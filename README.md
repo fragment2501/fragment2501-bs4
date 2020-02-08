@@ -20,16 +20,16 @@ Here's all the stuff I've smashed in so far.
     1. Added as described in the gridsome documentation so we only locally load icons that we need - https://gridsome.org/docs/assets-svg/#fontawesome-svg-icons.
     1. This is in addition to the nucleo icons included in the creative tim template.  (I'm thinking down the road I'll remove the nucleo icons in favor of the fontawesome ones)
 1. [Netlify](https://www.netlify.com) for hosting.  And dude, their build/preview/deploy workflow is super sexy <3
-1. PR/CI checks
+1. PR/CI checks.
     1. ESLint Checks via [GitHub Actions](https://github.com/features/actions)
         - [eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue)
         - [eslint-plugin-gridsome](https://github.com/gridsome/eslint-plugin-gridsome)
     1. [Cypress](https://www.cypress.io/) browser tests.
     1. Percy.io for scheenshot diff tests.
-1. Releases
-    1. Use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) format on PR squashes moving forward. For commit types refer to https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional
+1. Releases.
+    1. Use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) format on PR squashes moving forward. For commit types refer to [Angular commit message guidelines](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines).
     1. Releases will be their own PRs so we can do multiple commits to prep for a release.
-      1. Use [Standard Version](https://github.com/conventional-changelog/standard-version) for automation of semver versioning and changelog generation in release PR commits.
+        - Use [Standard Version](https://github.com/conventional-changelog/standard-version) for automation of semver versioning and changelog generation in release PR commits.
 
 ## Getting Started
 
