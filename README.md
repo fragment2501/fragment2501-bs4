@@ -1,8 +1,8 @@
 # Gridsome vue-now-ui Blog Starter Experiment
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8fe47863-eb74-40df-ab56-9657968c15ec/deploy-status)](https://app.netlify.com/sites/fragment2501/deploys)
-
 [![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/Fragment2501/fragment2501-bs4)
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
 This is my new blog, which is really just a jamstack playground for me.
 
@@ -26,6 +26,10 @@ Here's all the stuff I've smashed in so far.
         - [eslint-plugin-gridsome](https://github.com/gridsome/eslint-plugin-gridsome)
     1. [Cypress](https://www.cypress.io/) browser tests.
     1. Percy.io for scheenshot diff tests.
+1. Releases
+    1. Use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) format on PR squashes moving forward. For commit types refer to https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional
+    1. Releases will be their own PRs so we can do multiple commits to prep for a release.
+      1. Use [Standard Version](https://github.com/conventional-changelog/standard-version) for automation of semver versioning and changelog generation in release PR commits.
 
 ## Getting Started
 
