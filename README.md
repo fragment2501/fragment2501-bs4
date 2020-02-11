@@ -1,10 +1,17 @@
 # Gridsome vue-now-ui Blog Starter Experiment
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8fe47863-eb74-40df-ab56-9657968c15ec/deploy-status)](https://app.netlify.com/sites/fragment2501/deploys)
-
 [![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/Fragment2501/fragment2501-bs4)
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
 This is my new blog, which is really just a jamstack playground for me.
+
+## Getting Started
+
+1. Install the Gridsome CLI - https://gridsome.org/docs/#1-install-gridsome-cli-tool.
+2. Clone this project.
+3. Run `npm install`.
+4. Run `gridsome develop`
 
 ## Features
 Here's all the stuff I've smashed in so far.
@@ -20,16 +27,13 @@ Here's all the stuff I've smashed in so far.
     1. Added as described in the gridsome documentation so we only locally load icons that we need - https://gridsome.org/docs/assets-svg/#fontawesome-svg-icons.
     1. This is in addition to the nucleo icons included in the creative tim template.  (I'm thinking down the road I'll remove the nucleo icons in favor of the fontawesome ones)
 1. [Netlify](https://www.netlify.com) for hosting.  And dude, their build/preview/deploy workflow is super sexy <3
-1. PR/CI checks
+1. PR/CI checks.
     1. ESLint Checks via [GitHub Actions](https://github.com/features/actions)
         - [eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue)
         - [eslint-plugin-gridsome](https://github.com/gridsome/eslint-plugin-gridsome)
     1. [Cypress](https://www.cypress.io/) browser tests.
     1. Percy.io for scheenshot diff tests.
-
-## Getting Started
-
-1. Install the Gridsome CLI - https://gridsome.org/docs/#1-install-gridsome-cli-tool.
-2. Clone this project.
-3. Run `npm install`.
-4. Run `gridsome develop`
+1. Releases.
+    1. Use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) format on PR squashes moving forward. For commit types refer to [Angular commit message guidelines](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines).
+    1. Releases will be their own PRs so we can do multiple commits to prep for a release.
+        - Use [Standard Version](https://github.com/conventional-changelog/standard-version) for automation of semver versioning and changelog generation in release PR commits.
