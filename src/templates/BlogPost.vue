@@ -1,13 +1,12 @@
 <template>
   <Layout>
-    <div class="container mt-5 pt-5">
+    <div class="container mt-5 mb-3 pt-5">
       <div class="blogPost">
         <h1 v-html="$page.post.title" class="mb-4"/>
         <BlogContent :content="$page.post.content"/>
         <div class="float-right" v-text="new Date($page.post.date).toLocaleDateString()"/>
       </div>
     </div>
-    <br/>
   </Layout>
 </template>
 
