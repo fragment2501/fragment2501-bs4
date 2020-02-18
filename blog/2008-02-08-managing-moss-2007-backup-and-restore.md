@@ -13,18 +13,17 @@ If youre just getting your feet wet with managing MOSS 2007, you'll find a lot o
 
 To do a site backup, run the following command from a dos prompt on the server:
 
-```
+```batch
 c:>"%COMMONPROGRAMFILES%\microsoft shared\web server extensions\12\bin\stsadm" -o backup -url http://mysite.com:1234 -filename mysite.com.backup
 ```
 
 to do a site restore from that backup:
 
-```
+```batch
 c:>"%COMMONPROGRAMFILES%\microsoft shared\web server extensions\12\bin\stsadm" -o restore -url http://mynewsite.com:1234 -filename mysite.com.backup
 ```
 
 where `mynewsite.com:1234` is an existing MOSS site you've crated in the central admin.  You will most likely need to add the switch `-overwrite` to the restore command, unless the new site is completely empty of content.
-
 
 **UPDATE**
 
