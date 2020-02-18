@@ -1,5 +1,4 @@
 /* global module */
-
 module.exports = {
   siteName: 'Fragment2501 BS4',
   siteUrl: 'https://fragment2501.netlify.com',
@@ -15,7 +14,7 @@ module.exports = {
           externalLinksTarget: '_blank',
           externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
           plugins: [
-            '@gridsome/remark-prismjs'
+            'gridsome-plugin-remark-prismjs-all',
           ]
         },
       },

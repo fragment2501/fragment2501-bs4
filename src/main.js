@@ -5,6 +5,9 @@ import DefaultLayout from '~/layouts/Default.vue';
 // Default bootstrap stuff.
 import BootstrapVue from 'bootstrap-vue';
 
+// Prismjs stuff.
+require("gridsome-plugin-remark-prismjs-all/themes/tomorrow.css");
+
 // Our custom CSS stuff (Including the CSS stuff ror vue-now-kit).
 import './assets/styles/main.scss';
 
