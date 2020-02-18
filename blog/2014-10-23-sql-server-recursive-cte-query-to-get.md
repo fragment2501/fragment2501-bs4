@@ -10,7 +10,7 @@ blogger_orig_url: http://www.bryansgeekspeak.com/2014/10/sql-server-recursive-ct
 
 I've used the CONNECT BY syntax to do hierarchy queries in oracle, but recursive queries seem to be the new standard (not so new I guess, but new for me!).  Now that I'm using SQL server it seems to be the only way to go.  So here's my reference for walking a single table parent/child hierarchy:  
 
-```
+```sql{codeTitle: "temp.sql"}
 ---------------
 --- SQL Server 2008 or higher.
 --- Testing CTE recursive queries to get at tree hierarchy data

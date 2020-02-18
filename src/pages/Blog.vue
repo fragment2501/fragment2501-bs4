@@ -43,8 +43,7 @@ query Blog {
         date,
         path,
         title,
-        description,
-        cover_image (width: 480)
+        description
       }
     }
   }
