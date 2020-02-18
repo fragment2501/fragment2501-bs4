@@ -13,13 +13,13 @@ If youre just getting your feet wet with managing MOSS 2007, you'll find a lot o
 
 To do a site backup, run the following command from a dos prompt on the server:
 
-```bat
+```batch
 c:>"%COMMONPROGRAMFILES%\microsoft shared\web server extensions\12\bin\stsadm" -o backup -url http://mysite.com:1234 -filename mysite.com.backup
 ```
 
 to do a site restore from that backup:
 
-```bat
+```batch
 c:>"%COMMONPROGRAMFILES%\microsoft shared\web server extensions\12\bin\stsadm" -o restore -url http://mynewsite.com:1234 -filename mysite.com.backup
 ```
 

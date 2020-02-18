@@ -21,7 +21,7 @@ I just started using <a href="http://docs.seleniumhq.org/">Selenium</a> for auto
 1. Copy the `selenium-server-standalone-2.40.0.jar` to `c:\selenium\selenium-server-standalone-2.40.0.jar`
 1. Create a bat file to run your test script command `c:\selenium\RunMyGoogleTest.bat`
 1. Edit the bat file and paste in this command: 
-    ```bat{codeTitle: "RunMyGoogleTest.bat"}
+    ```batch{codeTitle: "RunMyGoogleTest.bat"}
     java -jar selenium-server-standalone-2.40.0.jar -htmlSuite "*firefox" "https://www.google.com/" "c:\selenium\MyGoogleTestSuite.html" "c:\Selenium\results.html" 
     ```
 1. Open a command prompt, change the current directory to `c:\selenium` and run `RunMyGoogleTest.bat`. Firefox should launch and show your tests being performed. 

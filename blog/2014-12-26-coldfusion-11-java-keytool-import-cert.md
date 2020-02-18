@@ -14,7 +14,7 @@ Doing an upgrade of coldfusion from CFMX 6.1 to CF11 on windows and completely f
 1. hit the web service WSDL url, confirm it works over HTTPS, and download the base64 version of the cert from your browser
 1. copy the cert to the coldfusion server (the default path for java cacert keyfile is here: C:\ColdFusion11\jre\lib\security)
 1. open a command prompt (run as administrator) and execute the command  
-```bat{codeTitle: "keytool.bat"}
+```batch{codeTitle: "keytool.bat"}
 cd C:\ColdFusion11\jre\lib\security
 ..\..\bin\keytool -import -keystore cacerts -alias <cert_alias> -file <cert_filename>
 ```
