@@ -12,7 +12,7 @@ blogger_orig_url: http://www.bryansgeekspeak.com/2008/03/vim-regex-cheatsheet.ht
 
 A quick and dirty vim cheatsheet for common regex stuff
 
-# VIM GLOBAL REPLACEMENT
+## VIM GLOBAL REPLACEMENT
 
 Delete all lines that do not start with "www" (:v is a negative match):
 ```vim
@@ -31,7 +31,7 @@ Remove the string " - 300k - Cached" from google search results, and matches any
 
 Replace string "XXX" on every line with the current line number:
 ```vim
-:%s/XXX/\=line(".")
+:%s/XXX/\=line(".")/
 ```
 
 For CSV file with 2 values separated by a comma per line.  Swap the values on each line.
@@ -39,7 +39,7 @@ For CSV file with 2 values separated by a comma per line.  Swap the values on ea
 %s/\([^,]\+,\)\(.\+\)/\2,\1/<br />%s/,$//
 ```
 
-# VIM SORTING
+## VIM SORTING
 
 Sort all lines alphabetically, line by line:
 ```vim
@@ -66,7 +66,7 @@ Sort all lines reverse numerically:
 :sort! n
 ```
 
-# REGEX VALIDATION
+## REGEX VALIDATION
 
 Validate string is an email address - This expects that there is only one email in the string, with no leading/trailing whitespace.  For more details on email regex, take a look at <a href="http://www.regular-expressions.info/email.html">http://www.regular-expressions.info/email.html</a>
 ```vim
