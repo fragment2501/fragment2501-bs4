@@ -9,4 +9,65 @@ blogger_id: tag:blogger.com,1999:blog-19111454.post-747393060460138525
 blogger_orig_url: http://www.bryansgeekspeak.com/2008/03/vim-regex-cheatsheet.html
 ---
 
-A quick and dirty vim cheatsheet for common regex stuff<br /><br /><br /><b>VIM GLOBAL REPLACEMENT</b><br /><br />Delete all lines that do not start with "www" (:v is a negative match):<br /><br /><div class="code">:v/^www/d</div><br />Delete all blank lines, including lines with only whitespace (:g is a positive match):<br /><br /><div class="code">:g/^\s*$/d</div><br />Remove the string " - 300k - Cached" from google search results, and matches any size in k:<br /><br /><div class="code">:g/ - \d+k - Cached//g</div><br />Replace string "XXX" on every line with the current line number:<br /><br /><div class="code">:%s/XXX/\=line(".")</div><br /> For CSV file with 2 values separated by a comma per line.  Swap the values on each line.<br /><br /><div class="code">%s/\([^,]\+,\)\(.\+\)/\2,\1/<br />%s/,$//</div><br /> <b>VIM SORTING</b><br /><br />Sort all lines alphabetically, line by line:<br /><br /><div class="code">:sort</div><br />Sort all lines numerically, line by line:<br /><br /><div class="code">:sort n</div><br />Sort lines 1,2 and 3 numerically, leaving the rest alone:<br /><br /><div class="code">:1,3sort n</div><br />Sort all lines, remove duplicates:<br /><br /><div class="code">:sort u</div><br />Sort all lines reverse numerically:<br /><br /><div class="code">:sort! n</div><br /><b>REGEX VALIDATION</b><br /><br />Validate string is an email address - This expects that there is only one email in the string, with no leading/trailing whitespace.  For more details on email regex, take a look at <a href="http://www.regular-expressions.info/email.html">http://www.regular-expressions.info/email.html</a><br /><br /><div class="code">/^[\w._%+-]+@[\w.-]+\.[\w]{2,4}$/</div><br /><b>RANDOM EXAMPLES!</b><br /><br />Here is a case where I need to transform google maps KML polygon data into a format that will work with Bing maps via the javascript api (version 7). I chose to push each set of polygon points into a javascript array of map location types as shown below. <div class="code">--- Initial idea of how data comes from KML. Tags are not valid KML tags, just used for example data<br>&lt;KML&gt;&lt;Content&gt;-77.315148,39.284253 -77.308349,39.277322 -77.29868,39.276026&lt;Content&gt;&lt;/KML&gt;<br><br>--- end result to be copied/pasted into a .js file<br>--- note that the Location function/method takes lat/long in reverse order of what KML gives us. v.push(new Microsoft.Maps.Location(39.284253,-77.315148));<br>v.push(new Microsoft.Maps.Location(39.277322,-77.308349));<br>v.push(new Microsoft.Maps.Location(39.276026,-77.29868));<br></div> Here are the vim commands I ran against the raw KML data to create the end result shown above <div class="code">--- remove all xml tags<br>%s/&lt;[a-zA-Z\/]\+&gt;//g<br>--- The dataset I get is all on one line, each record separated by a space. Replace the space with a newline to get records on their own row<br>%s/ /\r/<br>--- swap thing before the comma with thing after the comma (unfortunately it leaves an extra comma at the end of the result)<br>%s/\([^,]\+,\)\(.\+\)/\2,\1/<br>--- remove that extra comma at the end<br>%s/,$//<br>--- prepend each record with the javascript code we want for pushing the row into a JS array. This is specific to this projects js code<br>%s/^/vertices.push(new Microsoft.Maps.Loaction(/<br>--- append each record with end parens and semicolon for good JS<br>%s/$/));/<br></div>
+A quick and dirty vim cheatsheet for common regex stuff
+
+# VIM GLOBAL REPLACEMENT
+
+Delete all lines that do not start with "www" (:v is a negative match):
+```vim
+:v/^www/d
+```
+
+Delete all blank lines, including lines with only whitespace (:g is a positive match):
+```vim
+:g/^\s*$/d
+```
+
+Remove the string " - 300k - Cached" from google search results, and matches any size in k:
+```vim
+:g/ - \d+k - Cached//g
+```
+
+Replace string "XXX" on every line with the current line number:
+```vim
+:%s/XXX/\=line(".")
+```
+
+For CSV file with 2 values separated by a comma per line.  Swap the values on each line.
+```vim
+%s/\([^,]\+,\)\(.\+\)/\2,\1/<br />%s/,$//
+```
+
+# VIM SORTING
+
+Sort all lines alphabetically, line by line:
+```vim
+:sort
+```
+
+Sort all lines numerically, line by line:
+```vim
+:sort n
+```
+
+Sort lines 1,2 and 3 numerically, leaving the rest alone:
+```vim
+:1,3sort n
+```
+
+Sort all lines, remove duplicates:
+```vim
+:sort u
+```
+
+Sort all lines reverse numerically:
+```vim
+:sort! n
+```
+
+# REGEX VALIDATION
+
+Validate string is an email address - This expects that there is only one email in the string, with no leading/trailing whitespace.  For more details on email regex, take a look at <a href="http://www.regular-expressions.info/email.html">http://www.regular-expressions.info/email.html</a>
+```vim
+/^[\w._%+-]+@[\w.-]+\.[\w]{2,4}$/
+```
