@@ -1,6 +1,7 @@
 ---
 title: VIM Regex Cheatsheet
-date: '2008-03-17T14:38:00.000-07:00'
+published: true
+date: 2008-03-17
 tags:
 - Regex
 - VIM
