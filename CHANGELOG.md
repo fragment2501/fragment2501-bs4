@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.2 (2020-02-27)
+
+
+### Blog Posts
+
+* publish vim cheatsheet page ([#41](https://github.com/fragment2501/fragment2501-bs4/issues/41)) ([da854b0](https://github.com/fragment2501/fragment2501-bs4/commit/da854b018c78d451d999b78e6a3776bbaad462f2))
+
 ### 0.0.1 (2020-02-19)
 
 
