@@ -25,6 +25,18 @@
           <p>Contact</p>
         </nav-link>
       </li>
+
+      <li class="nav-item" v-if="!$auth.loading">
+        <a href="#" v-if="!$auth.isAuthenticated" @click="login" class="nav-link" data-cy="nav-link-login">
+          <i class="now-ui-icons gestures_tap-01"></i>
+          <p>Login</p>
+        </a>
+
+        <a href="#" v-if="$auth.isAuthenticated" @click="logout" class="nav-link" data-cy="nav-link-logout">
+          <i class="now-ui-icons sport_user-run"></i>
+          <p>Logout</p>
+        </a>
+      </li>
     </template>
   </navbar>
 </template>
@@ -55,6 +67,18 @@ export default {
     NavbarToggleButton,
     NavLink,
     [Popover.name]: Popover
+  },
+  methods: {
+    // Log the user in
+    login() {
+      this.$auth.loginWithRedirect();
+    },
+    // Log the user out
+    logout() {
+      this.$auth.logout({
+        returnTo: window.location.origin
+      });
+    }
   }
 };
 </script>
