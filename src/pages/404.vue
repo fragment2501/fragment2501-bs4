@@ -1,21 +1,8 @@
 <template>
   <Layout>
-    <div class="d-flex">
-    <img class="" src="../assets/images/404.svg" />
+    <div class="container mt-5 mb-3 pt-5">
+      <h1>Whoops! 404!</h1>
     </div>
   </Layout>
 </template>
 
-<style scoped lang="scss">
-img {
-  width: 80%;
-  margin: auto;
-
-  @media (max-width: 500px) {
-    width: 90%;
-  }
-  @media (max-width: 400px) {
-    width: 100%;
-  }
-}
-</style>
