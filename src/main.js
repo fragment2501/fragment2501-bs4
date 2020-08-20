@@ -28,10 +28,10 @@ config.autoAddCss = false;
 library.add(faGithub, faTwitter, faGooglePlusSquare, faDiscord);
 
 // Import the Auth0 configuration
-import { domain, clientId } from "../auth_config.json";
+import { domain, clientId } from '../auth_config.json';
 
 // Import the plugin here
-import { Auth0Plugin } from "./plugins/auth0.js";
+import { Auth0Plugin } from './plugins/auth0.js';
 
 export default function (Vue, { router, head, isClient }) {
   // Install the authentication plugin here only if we are running client side.
