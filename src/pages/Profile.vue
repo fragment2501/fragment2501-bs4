@@ -2,10 +2,10 @@
   <Layout>
     <div class="container mt-5 mb-3 pt-5">
       <h1>Profile</h1>
-      <div v-if="!$auth.isAuthenticated">
+      <div v-if="$auth && !$auth.isAuthenticated">
         You gotta login to see your profile!
       </div>
-      <div v-if="$auth.isAuthenticated">
+      <div v-if="$auth && $auth.isAuthenticated">
         <div>
           <img :src="$auth.user.picture">
           <h2>{{ $auth.user.name }}</h2>

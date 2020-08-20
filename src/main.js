@@ -34,18 +34,20 @@ import { domain, clientId } from "../auth_config.json";
 import { Auth0Plugin } from "./plugins/auth0.js";
 
 export default function (Vue, { router, head, isClient }) {
-  // Install the authentication plugin here
-  Vue.use(Auth0Plugin, {
-    domain,
-    clientId,
-    onRedirectCallback: appState => {
-      router.push(
-        appState && appState.targetUrl
-          ? appState.targetUrl
-          : window.location.pathname
-      );
-    }
-  });
+  // Install the authentication plugin here only if we are running client side.
+  if(isClient){
+    Vue.use(Auth0Plugin, {
+      domain,
+      clientId,
+      onRedirectCallback: appState => {
+        router.push(
+          appState && appState.targetUrl
+            ? appState.targetUrl
+            : window.location.pathname
+        );
+      }
+    });
+  }
 
   // Default bootstrap stuff.
   Vue.use(BootstrapVue);

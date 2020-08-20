@@ -26,21 +26,21 @@
         </nav-link>
       </li>
 
-      <li class="nav-item" v-if="!$auth.loading">
+      <li class="nav-item" v-if="$auth && !$auth.loading">
         <nav-link v-if="$auth.isAuthenticated" to="/profile" class="nav-link" data-cy="nav-link-profile">
           <i class="now-ui-icons users_circle-08"></i>
           <p>Profile</p>
         </nav-link>
       </li>
 
-      <li class="nav-item" v-if="!$auth.loading">
+      <li class="nav-item" v-if="$auth && $auth.loading">
         <a href="#" v-if="!$auth.isAuthenticated" @click="login" class="nav-link" data-cy="nav-link-login">
           <i class="now-ui-icons gestures_tap-01"></i>
           <p>Login</p>
         </a>
       </li>
 
-      <li class="nav-item" v-if="!$auth.loading">
+      <li class="nav-item" v-if="$auth && !$auth.loading">
         <a href="#" v-if="$auth.isAuthenticated" @click="logout" class="nav-link" data-cy="nav-link-logout">
           <i class="now-ui-icons sport_user-run"></i>
           <p>Logout</p>
