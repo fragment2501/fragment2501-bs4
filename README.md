@@ -33,7 +33,3 @@ Here's all the stuff I've smashed in so far.
         - [eslint-plugin-gridsome](https://github.com/gridsome/eslint-plugin-gridsome)
     1. [Cypress](https://www.cypress.io/) browser tests.
     1. Percy.io for scheenshot diff tests.
-1. Releases.
-    1. Use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) format on PR squashes moving forward. For commit types refer to [Angular commit message guidelines](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines).
-    1. Releases will be their own PRs so we can do multiple commits to prep for a release.
-        - Use [Standard Version](https://github.com/conventional-changelog/standard-version) for automation of semver versioning and changelog generation in release PR commits.
