@@ -28,7 +28,7 @@ config.autoAddCss = false;
 library.add(faGithub, faTwitter, faGooglePlusSquare, faDiscord);
 
 // Import the Auth0 configuration
-import { domain, clientId } from '../auth_config.json';
+import { domain, clientId, audience } from '../auth_config.json';
 
 // Import the plugin here
 import { Auth0Plugin } from './plugins/auth0.js';
@@ -39,6 +39,7 @@ export default function (Vue, { router, head, isClient }) {
     Vue.use(Auth0Plugin, {
       domain,
       clientId,
+      audience,
       onRedirectCallback: appState => {
         router.push(
           appState && appState.targetUrl
