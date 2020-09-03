@@ -11,7 +11,7 @@
 <script>
 export default {
   name: 'nav-link',
-  inject: ['closeNavbar', 'closeDropDown'],
+  inject: ['closeNavbar'],
   props: {
     to: {
       type: [String, Object],

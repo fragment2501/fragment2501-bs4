@@ -27,7 +27,28 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 config.autoAddCss = false;
 library.add(faGithub, faTwitter, faGooglePlusSquare, faDiscord);
 
+// Import the Auth0 configuration
+import { domain, clientId } from '../auth_config.json';
+
+// Import the plugin here
+import { Auth0Plugin } from './plugins/auth0.js';
+
 export default function (Vue, { router, head, isClient }) {
+  // Install the authentication plugin here only if we are running client side.
+  if(isClient){
+    Vue.use(Auth0Plugin, {
+      domain,
+      clientId,
+      onRedirectCallback: appState => {
+        router.push(
+          appState && appState.targetUrl
+            ? appState.targetUrl
+            : window.location.pathname
+        );
+      }
+    });
+  }
+
   // Default bootstrap stuff.
   Vue.use(BootstrapVue);
   Vue.component('Layout', DefaultLayout);
