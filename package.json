@@ -21,7 +21,7 @@
     "gridsome": "^0.7.12",
     "gridsome-plugin-pwa": "0.0.10",
     "gridsome-plugin-remark-prismjs-all": "^0.3.2",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "nouislider": "^11.1.0",
     "sass-loader": "^7.0.0",
     "vue2-transitions": "^0.2.3"
